@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+  font-family: 'Tercia';
+  src: url('../fonts/Tercia.otf');
+  font-weight: 400;
+}
+
+.tercia{
+  font-family: 'Tercia';
+  letter-spacing: 0.22px;
+}
+
+* {
+  scroll-behavior:auto;
+}
+/* body{
+  background-color: red;
+} */
+
+button, a {
+  transition: all .2s ease !important;
+}
+
+.swiper-pagination{
+  top: unset !important;
+  bottom: unset !important;
+  position: relative !important;
+  height: inherit !important;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-pagination-bullet{
+  width: 59px !important;
+  height: 2px !important;
+  opacity: 1 !important;
+  border-radius: 0 !important;
+  background: #F6F6F6 !important;
+}
+.swiper-pagination-bullet-active{
+  background: #252525 !important;
+}
+.html-spaces p{
+  margin-bottom: 16px;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width: 512px) {
+  .html-spaces br{
+      display: none;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f6f6f6;
+  border-radius: 4px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5f5f5f;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f6f6f6;
+}
